@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
         <title>Carousel</title>
     </head>
@@ -14,19 +17,39 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner w-100">
                       <div class="carousel-item active">
-                        <img src="images/forest.jpg" class="d-block w-100" alt="...">
+                        <img src="images/wave.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h5>Ocean</h5>
+                          <p>This is a crashing wave.</p>
+                        </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="images/glacier.jpg" class="d-block w-100" alt="...">
+                        <img src="images/snowy.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h5>Mountian</h5>
+                          <p>This is a majestic snowy mountain.</p>
+                        </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/redrock.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h5>Arch</h5>
+                          <p>This is beautiful arch.</p>
+                        </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/forest2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h5>Forest</h5>
+                          <p>This is a deep forest.</p>
+                        </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/scotland.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h5>Highland</h5>
+                          <p>This is Scotland.</p>
+                        </div>
                       </div>
                       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -40,9 +63,61 @@
                   </div>
             </div>
             <div class="cards">
-
+              <div class="row">
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <img class="card-img-top" src="images/river.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">River</h4>
+                      <p class="card-text">Fusce commodo metus at erat hendrerit placerat. Maecenas pulvinar euismod dapibus. Nulla sagittis condimentum sapien non cursus. Proin vulputate hendrerit cursus.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <img class="card-img-top" src="images/peak.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Mountain</h4>
+                      <p class="card-text">Fusce commodo metus at erat hendrerit placerat. Maecenas pulvinar euismod dapibus. Nulla sagittis condimentum sapien non cursus. Proin vulputate hendrerit cursus.</p>
+                      <a href="#" class="btn btn-primary ">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <img class="card-img-top" src="images/road.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Desert Road</h4>
+                      <p class="card-text">Fusce commodo metus at erat hendrerit placerat. Maecenas pulvinar euismod dapibus. Nulla sagittis condimentum sapien non cursus. Proin vulputate hendrerit cursus.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Special Thanks
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-     
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Special Thanks!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Photographs taken by Alexandra Shumway.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     </body>
 </html>
